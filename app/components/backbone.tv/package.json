@@ -1,0 +1,19 @@
+{
+  "name": "backbone.tv",
+  "version": "0.0.1",
+  "description": "backbone-tv is the backbone extension library to make easily webapp for kind of tv style.",
+  "main": "backbont.tv.js",
+  "dependencies": {
+    "lodash": ">=1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "phantomjs": "0.2.2",
+    "grunt-reload": "https://github.com/ragingwind/grunt-reload/tarball/master"
+  },
+  "scripts": {
+    "test": "phantomjs test/vendor/runner.js test/index.html?noglobals=true"
+  },
+  "repository": "",
+  "author": "ragingwind <ragingwind@gmail.com>",
+  "license": "MIT"
+}

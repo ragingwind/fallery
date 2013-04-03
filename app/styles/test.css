@@ -1,0 +1,77 @@
+/* TEST VIEW */
+
+#test ul {
+  padding: 20px;
+  margin: 0;
+  height:800px;
+  overflow: scroll;
+  list-style-type:none;
+  margin: 0 auto;
+}
+
+#test ul li {
+  list-style-type: none;
+  /*float:left;*/
+}
+
+#test #users {
+  width: 80px;
+  text-align: center;
+  float: left;
+}
+
+#test #users ul li.user {
+  cursor: pointer;
+}
+
+#test #albums {
+  width: 200px;
+  text-align: center;
+  float: left;
+}
+
+#test #albums ul li .album-name {
+  text-align: left;
+}
+
+#test #albums ul li.album {
+  cursor: pointer;
+}
+
+#test #albums ul li.album:hover {
+  border:1px solid #4A6EA9;
+}
+
+#test #albums ul li.album:hover {
+  color: #4A6EA9;
+}
+
+#test #photos {
+  margin-left: 300px;
+}
+
+#test #photos ul li.photo {
+  cursor: pointer;
+  float:left;
+}
+
+/* TEST LIST */
+#testList {
+  width:200px;
+  height:300px;
+}
+
+#testList ul {
+  padding-left:10px;
+  border:1px solid black;
+}
+
+#testList ul li {
+  list-style-type: none;
+  font-size:1.5em;
+  height:30px;
+}
+
+#testList ul li.hover {
+  border:1px solid red;
+}

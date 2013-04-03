@@ -1,0 +1,24 @@
+{
+  "name": "backbone.tv",
+  "version": "0.0.0",
+  "main": [
+    "backbone.tv.js",
+    "backbone.tv.widget.js",
+    "backbone.tv.xhr-worker.js"
+  ],
+  "dependencies": {
+    "jquery": "~1.8",
+    "lodash": "~1.0.0-rc.3",
+    "backbone": "~0.9"
+  },
+  "gitHead": "f8311a2358fbbbb548e3c0039cd9b4ae0c96a252",
+  "readme": "# BACKBONE-TV\nbackbone-tv is the backbone extension library to easily make a webapp in tv style. it was composed by several modules. one is backbone.keyevent that is help to handle key event simply, with view hierarchy structure. task, resource manager and xhr webworker is going to give to you enhanced performance. also it supports web animation internally.\n\n# BACKBONE-TV WIDGET\nbackbone-tv plug-in, it is widget set based on backbone-tv view.\n\n## VERSION\nnote that this version is still experimental, and the implementation of source can be changed massively.\n\n## LICENCE - MIT\nCopyright (c) 2013 MOONANDYOU\n",
+  "readmeFilename": "readme.md",
+  "_id": "backbone.tv@0.0.1",
+  "description": "backbone-tv is the backbone extension library to easily make a webapp in tv style. it was composed by several modules. one is backbone.keyevent that is help to handle key event simply, with view hierarchy structure. task, resource manager and xhr webworker is going to give to you enhanced performance. also it supports web animation internally.",
+  "commit": "f8311a2358fbbbb548e3c0039cd9b4ae0c96a252",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MOONANDYOU/backbone.tv.git"
+  }
+}

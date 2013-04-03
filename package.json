@@ -1,0 +1,30 @@
+{
+  "name": "fallery",
+  "author": "jimmy@moonandyou.com",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.1.0",
+    "mongoose": "3.5.6",
+    "shortid": "1.0.9",
+    "MD5": "latest",
+    "connect-auth": "~0.5.3",
+    "oauth": "~0.9.8",
+    "lodash": "~1.0.1",
+    "qs": "~0.5.3",
+    "settings": "~0.1.0",
+    "underscore": "~1.4.4",
+    "ini": "~1.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-mocha": "~0.2.3"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}

@@ -1,0 +1,367 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+@import 'font-awesome.css';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+document {
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+body {
+  padding:0;
+  margin:0;
+  border:0;
+  overflow:hidden;
+}
+
+div {
+  -webkit-transition: translate3d(0,0,0);
+}
+
+#app {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+
+div[data-backbonetv-viewtype="screen"] {
+};
+
+#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#background #logo {
+  background-image: url('../images/fallery-logo.png');
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  width:480px;
+  height:167px;
+  margin-left:-240px;
+  margin-top:-80px;
+}
+
+#background #logo.banner {
+  left: auto;
+  right: -15em;
+  top: 3em;
+  background-size: 14em 5em;
+  background-repeat:no-repeat;
+  background-position:left;
+}
+
+#background {
+  background-color: #2C5999;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  border-left:1px solid #ACAAA4;
+}
+
+#background img {
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  opacity: 0;
+}
+
+/*
+ * ALBUMS
+ */
+
+#albums {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width:280px;
+  height:100%;
+  z-index:99999;
+  opacity: 0;
+}
+
+#albums #list ul {
+  padding:0;
+  padding-left:0.7em;
+}
+
+#albums #list ul li {
+  width:15em;
+  list-style-type: none;
+  font-size:2.5em;
+  color:white;
+  margin-bottom:0.3em;
+}
+
+#albums #list ul li.hover {
+  font-size:5em;
+  font-weight:600;
+}
+
+/*
+ * PROFILE
+ */
+
+#profile {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 15em;
+  height:100%;
+  z-index:999999;
+}
+
+#profile div[data-backbonetv-viewtype="barview"] {
+  width:3.9em;
+  height:100%;
+  background-color:#131214;
+  position: absolute;
+  top:0px;
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+
+#profile ul {
+  padding:0;
+  margin:0;
+  padding-top:1em;
+  height:100%;
+}
+
+#profile ul li {
+  list-style-type: none;
+  margin-bottom:0.5em;
+  color:#7B7D7F;
+}
+
+#profile ul li.hover {
+  color:white;
+}
+
+#profile ul li:nth-child(1) {
+  background-image: url('../images/default-profile.png');
+  background-size: 3em 3em;
+  width:3em;
+  height:3em;
+  margin-left:0.4em;
+  border-radius: 5px;
+  margin-bottom:1em;
+}
+
+#profile ul li:nth-child(1) img {
+  width:3em;
+  height:3em;
+  border-radius: 5px;
+  margin-bottom:1em;
+  opacity: 0;
+}
+
+#profile ul li:nth-child(2) div.bar {
+  width:3em;
+  height:2px;
+  margin-left:0.4em;
+  border-top:1px solid #000000;
+  border-bottom:1px solid #2B2B2D;
+  margin-bottom:1em;
+}
+
+#profile ul li .label {
+  position: absolute;
+  left:2.3em;
+  width:6em;
+  height:3.7em;
+  background-color:#131214;
+  color:white;
+  font-size:1.7em;
+  padding:0.4em;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,.5);
+  line-height:1.8em;
+  display:none;
+}
+
+#profile ul li .label .title {
+  font-size:1em;
+  border-bottom:1px solid #2B2B2D;
+}
+
+#profile ul li .label .detail {
+  border-top:1px solid #000000;
+  font-size:0.6em;
+  line-height: 1.1em;
+  padding-top:0.8em;
+}
+
+#profile ul li:nth-child(1) .label {
+  top:0em;
+}
+
+#profile ul li:nth-child(2) .label {
+  top:3em;
+}
+
+#profile ul li:nth-child(3) .label {
+  top:4.9em;
+}
+
+#profile ul li:nth-child(4) .label {
+  top:6.7em;
+}
+
+#profile ul li.bar {
+  width:3em;
+  height:2px;
+  margin-left:0.4em;
+  margin-bottom:1em;
+}
+
+#profile .icon-large {
+  font-size:2em;
+}
+
+/* PHOTOS */
+
+.slider {
+  position: absolute;
+  top: 12em;
+  left: 1em;
+  z-index:9999999;
+  overflow:hidden;
+  height: 20em;
+  white-space: nowrap;
+  display:inline-block;
+  zoom: 1;
+  width:220em;
+}
+
+.slider>div {
+  width: 23em;
+  height:100%;
+  font-family: 'roboto-condensed-regular',arial,sans-serif;
+}
+
+.slider .frame {
+  height:98%;
+  width:94%;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,.5);
+}
+
+.slider .frame .top {
+  height: 80%;
+  color: #222;
+}
+
+.slider .frame .bottom {
+  height: 23%;
+}
+
+.slider div:nth-child(1) .frame .bottom .activity {
+  background-color:#2A2A33;
+  color:white;
+}
+
+.slider .bottom .activity {
+  background-color:white;
+  color:black;
+}
+
+.slider .bottom .activity .profile-image {
+  padding-left:0.3em;
+  padding-top:0.3em;
+  border-radius: 5px;
+}
+
+.slider .bottom .activity .name {
+  font-size:1.2em;
+  padding-left:0.5em;
+  line-height: 1.7em;
+}
+
+.slider .bottom .activity .time {
+  font-size:0.9em;
+  padding-left:0.7em;
+}
+
+.slider .thumb {
+  white-space: nowrap;
+  background-color: white;
+  background-position: center;
+  background-size: 136%;
+  height: 100%;
+}
+
+
+/* KEYGUIDE */
+
+#keyguide {
+  position:absolute;
+  right:3em;
+  bottom:1em;
+  width:20em;
+  height:3.4em;
+  z-index:999999;
+}
+
+#keyguide td {
+  width:3.4em;
+  height:3.4em;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+  color: #131820;
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  font-size:0.7em;
+  text-align:center;
+  font-weight:500;
+  vertical-align: middle;
+  opacity:0.8;
+}
+
+/* PHOTOVIEWER */
+
+#photoviewer {
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index:99999999;
+  display:table;
+  height: 100% !important;
+  table-layout: fixed;
+  width: 100%;
+  background-color:rgba(0,0,0,0.95);
+  opacity:0;
+}
+
+#photoviewer div.tablerow {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#photoviewer div.tablecontent  {
+  display: inline-block;
+  height: auto;
+  image-rendering: optimizeQuality;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#photoviewer .image-container {
+  overflow: hidden;
+  opacity: 0;
+}
