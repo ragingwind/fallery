@@ -1,8 +1,7 @@
 # FALLERY
 *WARN THIS PROJECT STILL CONCEPT VERSION. IT MAY HAS A SOME PROBLEM.*
 
-fallery, make own facebook gallery on big-screen. it's built up on [backbone.tv](https://github.com/MOONANDYOU/backbone.tv). this project can run on [yeoman 0.9.6 express-stack](https://github.com/yeoman/yeoman/tree/express-stack) and foreman of heroku. you can develop this project by using either.
-
+fallery, make own facebook gallery on big-screen. it's built up on [backbone.tv](https://github.com/MOONANDYOU/backbone.tv). this project can run on [yeoman 0.9.6 express-stack](https://github.com/yeoman/yeoman/tree/express-stack) and foreman of heroku. you can develop this project by using either. you can see the [live demo](http://fallery.herokuapp.com)
 
 # SETUP
 ## ENV
