@@ -2639,11 +2639,6 @@
 
       if (finished || paused) {
         rafScheduled = false;
-        if (finished) {
-          sortedPlayers.forEach(function(player) {
-            player.source.animDeferred.resolve();
-          });
-        }
       } else {
         raf(ticker);
       }
