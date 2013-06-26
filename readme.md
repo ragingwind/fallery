@@ -42,6 +42,7 @@ if you want to use heroku? you shoud create a new app on heroku. after then you 
     foreman start
 
     // add env properties to heroku
+    heroku config:set NODE_ENV=production
     heroku config:add FACEBOOK_CLIENTID=$YOUR_FACEBOOK_CLIENTID
     heroku config:add FACEBOOK_SECRET=$YOUR_FACEBOOK_SECRET
 
