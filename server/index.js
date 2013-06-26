@@ -15,7 +15,10 @@ function key() {
 }
 
 // read configuration from .env and config.js
+console.log('exist check');
+console.log(fs.existsSync('./.env'));
 if (fs.existsSync('./.env')) {
+  console.log( fs.readFileSync('./.env', 'utf-8') );
   _.defaults( process.env, ini.parse(fs.readFileSync('./.env', 'utf-8')) );
 }
 
