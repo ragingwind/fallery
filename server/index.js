@@ -15,7 +15,10 @@ function key() {
 }
 
 // read configuration from .env and config.js
-_.defaults( process.env, ini.parse(fs.readFileSync('./.env', 'utf-8')) );
+if (fs.existsSync('./.env')) {
+  _.defaults( process.env, ini.parse(fs.readFileSync('./.env', 'utf-8')) );
+}
+
 app.config = new settings( require('./config'), {env: env} );
 
 // create session with memory store
